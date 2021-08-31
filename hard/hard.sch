@@ -684,8 +684,8 @@ $Comp
 L Switch:SW_Push_45deg SW_3
 U 1 1 612E5352
 P 4800 2000
-F 0 "SW_3" V 5100 1900 50  0000 R CNN
-F 1 "SW_3" V 5000 1900 50  0000 R CNN
+F 0 "SW_3" V 5050 1900 50  0000 R CNN
+F 1 "SW_3" V 4950 1900 50  0000 R CNN
 F 2 "" H 4800 2000 50  0001 C CNN
 F 3 "~" H 4800 2000 50  0001 C CNN
 	1    4800 2000
@@ -1841,7 +1841,7 @@ Wire Wire Line
 	10400 2350 9400 2350
 Connection ~ 3400 2350
 Wire Wire Line
-	3400 2350 3050 2350
+	3400 2350 3100 2350
 Connection ~ 3900 2350
 Wire Wire Line
 	3900 2350 3400 2350
@@ -1879,7 +1879,7 @@ Connection ~ 9400 2350
 Wire Wire Line
 	9400 2350 8900 2350
 Wire Wire Line
-	3050 2900 3400 2900
+	3100 2900 3400 2900
 Connection ~ 3400 2900
 Wire Wire Line
 	3400 2900 3900 2900
@@ -1920,7 +1920,7 @@ Wire Wire Line
 	10400 3450 9900 3450
 Connection ~ 3400 3450
 Wire Wire Line
-	3400 3450 3050 3450
+	3400 3450 3100 3450
 Connection ~ 3900 3450
 Wire Wire Line
 	3900 3450 3400 3450
@@ -1955,7 +1955,7 @@ Connection ~ 9900 3450
 Wire Wire Line
 	9900 3450 8400 3450
 Wire Wire Line
-	3050 4000 3900 4000
+	3100 4000 3900 4000
 Wire Wire Line
 	8400 4000 8400 4100
 Wire Wire Line
@@ -2067,4 +2067,44 @@ Connection ~ 4100 2200
 Wire Wire Line
 	3600 2200 3600 1700
 Connection ~ 3600 2200
+Text Label 3100 1800 2    50   ~ 0
+ROW1
+Text Label 3100 2350 2    50   ~ 0
+ROW2
+Text Label 3100 2900 2    50   ~ 0
+ROW3
+Text Label 3100 3450 2    50   ~ 0
+ROW4
+Text Label 3100 4000 2    50   ~ 0
+ROW5
+Text Label 3600 1700 0    50   ~ 0
+COL1
+Text Label 4100 1700 0    50   ~ 0
+COL2
+Text Label 4600 1700 0    50   ~ 0
+COL3
+Text Label 5100 1700 0    50   ~ 0
+COL4
+Text Label 5600 1700 0    50   ~ 0
+COL5
+Text Label 6100 1700 0    50   ~ 0
+COL6
+Text Label 6600 1700 0    50   ~ 0
+COL7
+Text Label 7100 1700 0    50   ~ 0
+COL8
+Text Label 7600 1700 0    50   ~ 0
+COL9
+Text Label 8100 1700 0    50   ~ 0
+COL10
+Text Label 8600 1700 0    50   ~ 0
+COL11
+Text Label 9100 1700 0    50   ~ 0
+COL12
+Text Label 9600 1700 0    50   ~ 0
+COL13
+Text Label 10100 1700 0    50   ~ 0
+COL14
+Text Label 10600 1700 0    50   ~ 0
+COL15
 $EndSCHEMATC
