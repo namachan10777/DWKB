@@ -18,4 +18,10 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
       working-directory: 'soft'
+    - name: Lint
+      run: cargo clippy -- -D warnings
+      working-directory: 'soft'
+    - name: Format check 
+      run: cargo fmt -- --check
+      working-directory: 'soft'
 
