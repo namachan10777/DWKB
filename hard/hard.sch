@@ -2737,4 +2737,82 @@ F 3 "" H 3150 2850 50  0001 C CNN
 	1    3150 2850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:RJ45_Shielded J?
+U 1 1 61F83A36
+P 9350 3350
+F 0 "J?" H 9407 4017 50  0000 C CNN
+F 1 "RJ45_Shielded" H 9407 3926 50  0000 C CNN
+F 2 "" V 9350 3375 50  0001 C CNN
+F 3 "~" V 9350 3375 50  0001 C CNN
+	1    9350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ45_Shielded J?
+U 1 1 61F85D52
+P 10650 3350
+F 0 "J?" H 10707 4017 50  0000 C CNN
+F 1 "RJ45_Shielded" H 10707 3926 50  0000 C CNN
+F 2 "" V 10650 3375 50  0001 C CNN
+F 3 "~" V 10650 3375 50  0001 C CNN
+	1    10650 3350
+	1    0    0    -1  
+$EndComp
+Text Label 9750 2950 0    50   ~ 0
+ROW1
+Text Label 9750 3050 0    50   ~ 0
+ROW2
+Text Label 9750 3150 0    50   ~ 0
+ROW3
+Text Label 9750 3250 0    50   ~ 0
+ROW4
+Text Label 9750 3350 0    50   ~ 0
+ROW5
+Text Label 9750 3450 0    50   ~ 0
+COL7
+Text Label 9750 3550 0    50   ~ 0
+COL8
+Text Label 11050 2950 0    50   ~ 0
+COL9
+Text Label 11050 3050 0    50   ~ 0
+COL10
+Text Label 11050 3150 0    50   ~ 0
+COL11
+Text Label 11050 3250 0    50   ~ 0
+COL12
+Text Label 11050 3350 0    50   ~ 0
+COL13
+Text Label 11050 3450 0    50   ~ 0
+COL14
+Text Label 11050 3550 0    50   ~ 0
+COL15
+$Comp
+L power:GND #PWR?
+U 1 1 625218AB
+P 9350 4000
+F 0 "#PWR?" H 9350 3750 50  0001 C CNN
+F 1 "GND" H 9355 3827 50  0000 C CNN
+F 2 "" H 9350 4000 50  0001 C CNN
+F 3 "" H 9350 4000 50  0001 C CNN
+	1    9350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62522838
+P 10650 4000
+F 0 "#PWR?" H 10650 3750 50  0001 C CNN
+F 1 "GND" H 10655 3827 50  0000 C CNN
+F 2 "" H 10650 4000 50  0001 C CNN
+F 3 "" H 10650 4000 50  0001 C CNN
+	1    10650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 4000 10650 3850
+Wire Wire Line
+	9350 4000 9350 3850
+NoConn ~ 11050 3650
+NoConn ~ 9750 3650
 $EndSCHEMATC
