@@ -1,2 +1,2 @@
-# dlkb
-depression life keyboard.
+# DWKB
+Depression Working Keyboard.
