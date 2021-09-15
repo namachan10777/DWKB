@@ -1199,9 +1199,9 @@ Wire Wire Line
 Wire Wire Line
 	3400 2500 3400 2600
 Text Label 4100 2700 2    50   ~ 0
-BOOT0
+L_BOOT0
 Text Label 2650 6550 0    50   ~ 0
-BOOT1
+R_BOOT1
 $Comp
 L power:GND #PWR0106
 U 1 1 619313F8
@@ -1272,7 +1272,7 @@ $EndComp
 Wire Wire Line
 	2650 7050 2650 6950
 Text Label 1550 6550 0    50   ~ 0
-BOOT0
+R_BOOT0
 $Comp
 L power:GND #PWR0109
 U 1 1 61ADC3EF
@@ -1343,11 +1343,11 @@ $EndComp
 Wire Wire Line
 	1550 7050 1550 6950
 Text Label 5400 4400 0    50   ~ 0
-BOOT1
+L_BOOT1
 Text Label 4100 3600 2    50   ~ 0
-XTAL_8M_A
+L_XTAL_8M_A
 Text Label 4100 3700 2    50   ~ 0
-XTAL_8M_A
+L_XTAL_8M_B
 $Comp
 L Device:Crystal_GND24 Y1
 U 1 1 61B0D674
@@ -1423,91 +1423,9 @@ Wire Wire Line
 	1900 3900 1750 3900
 Connection ~ 1750 3900
 Text Label 1750 3400 1    50   ~ 0
-XTAL_8M_A
+L_XTAL_8M_A
 Text Label 1250 3400 1    50   ~ 0
-XTAL_8M_B
-$Comp
-L Device:Crystal_GND24 Y2
-U 1 1 61CCD628
-P 2300 3400
-F 0 "Y2" V 2450 3500 50  0000 L CNN
-F 1 "XTAL_8M" V 2150 3500 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 2300 3400 50  0001 C CNN
-F 3 "~" H 2300 3400 50  0001 C CNN
-	1    2300 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 61CCD9DA
-P 2550 3650
-F 0 "C4" V 2650 3500 50  0000 L CNN
-F 1 "12pF" V 2450 3400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2588 3500 50  0001 C CNN
-F 3 "~" H 2550 3650 50  0001 C CNN
-	1    2550 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 61CCD9E4
-P 2050 3650
-F 0 "C3" V 2150 3500 50  0000 L CNN
-F 1 "12pF" V 1950 3400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2088 3500 50  0001 C CNN
-F 3 "~" H 2050 3650 50  0001 C CNN
-	1    2050 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 3500 2050 3400
-Wire Wire Line
-	2050 3400 2150 3400
-Wire Wire Line
-	2550 3500 2550 3400
-Wire Wire Line
-	2550 3400 2450 3400
-$Comp
-L power:GND #PWR0113
-U 1 1 61CCD9F2
-P 2300 4000
-F 0 "#PWR0113" H 2300 3750 50  0001 C CNN
-F 1 "GND" H 2305 3827 50  0000 C CNN
-F 2 "" H 2300 4000 50  0001 C CNN
-F 3 "" H 2300 4000 50  0001 C CNN
-	1    2300 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 4000 2300 3900
-Wire Wire Line
-	2300 3900 2550 3900
-Wire Wire Line
-	2550 3900 2550 3800
-Wire Wire Line
-	2300 3900 2050 3900
-Wire Wire Line
-	2050 3900 2050 3800
-Connection ~ 2300 3900
-Wire Wire Line
-	2300 3600 2300 3900
-Wire Wire Line
-	2300 3200 2300 3100
-Wire Wire Line
-	2300 3100 2700 3100
-Wire Wire Line
-	2700 3100 2700 3900
-Wire Wire Line
-	2700 3900 2550 3900
-Connection ~ 2550 3900
-Text Label 2550 3400 1    50   ~ 0
-XTAL_32K_A
-Text Label 2050 3400 1    50   ~ 0
-XTAL_32K_B
-Text Label 4100 5500 2    50   ~ 0
-XTAL_32K_A
-Text Label 4100 5600 2    50   ~ 0
-XTAL_32K_B
+L_XTAL_8M_B
 Wire Wire Line
 	3350 2900 4100 2900
 Wire Wire Line
@@ -2779,84 +2697,12 @@ Wire Wire Line
 	15150 8050 15150 7500
 Text Label 10550 6550 2    50   ~ 0
 ROW1
-Text Label 11750 950  0    50   ~ 0
-ROW1L
-Text Label 11750 1050 0    50   ~ 0
-ROW2L
-Text Label 11750 1150 0    50   ~ 0
-ROW3L
-Text Label 11750 1250 0    50   ~ 0
-ROW4L
-Text Label 11750 1350 0    50   ~ 0
-ROW5L
-Text Label 13050 950  0    50   ~ 0
-COL1L
-Text Label 13050 1050 0    50   ~ 0
-COL2L
-Text Label 13050 1150 0    50   ~ 0
-COL3L
-Text Label 13050 1250 0    50   ~ 0
-COL4L
-Text Label 13050 1350 0    50   ~ 0
-COL5L
-Text Label 13050 1450 0    50   ~ 0
-COL6L
-Text Label 13050 1550 0    50   ~ 0
-COL7L
-Text Label 13050 1650 0    50   ~ 0
-COL8L
 NoConn ~ 11750 1450
 NoConn ~ 11750 1550
-Text Label 8050 4650 0    50   ~ 0
-COL1
-Text Label 8050 4750 0    50   ~ 0
-COL2
-Text Label 8050 4850 0    50   ~ 0
-COL3
-Text Label 8050 4950 0    50   ~ 0
-COL4
-Text Label 8050 5050 0    50   ~ 0
-COL5
-Text Label 8050 5150 0    50   ~ 0
-COL6
-Text Label 8050 5250 0    50   ~ 0
-COL7
-Text Label 8050 5350 0    50   ~ 0
-COL8
 Wire Wire Line
 	14150 6500 14150 6950
 Wire Wire Line
 	14150 6450 14150 6950
-Text Label 8050 5450 0    50   ~ 0
-COL9
-Text Label 8050 5550 0    50   ~ 0
-COL10
-Text Label 8050 5650 0    50   ~ 0
-COL11
-Text Label 8050 5750 0    50   ~ 0
-COL12
-Text Label 8050 5850 0    50   ~ 0
-COL13
-Text Label 8050 5950 0    50   ~ 0
-COL14
-Text Label 8050 6050 0    50   ~ 0
-COL15
-Text Label 8050 6150 0    50   ~ 0
-COL16
-Text Label 8050 6250 0    50   ~ 0
-COL17
-Text Label 8050 6350 0    50   ~ 0
-COL18
-Text Label 8050 6450 0    50   ~ 0
-ROW1
-Text Label 8050 6550 0    50   ~ 0
-ROW2
-Text Label 8050 6650 0    50   ~ 0
-ROW3
-Text Label 8050 6750 0    50   ~ 0
-ROW4
-Text Label 8050 6850 0    50   ~ 0
-ROW5
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 6197473E
@@ -3463,17 +3309,13 @@ Wire Wire Line
 Wire Wire Line
 	13700 2350 13700 2450
 Text Label 14400 2550 2    50   ~ 0
-BOOT0
+R_BOOT0
 Text Label 15700 4250 0    50   ~ 0
-BOOT1
+R_BOOT1
 Text Label 14400 3450 2    50   ~ 0
-XTAL_8M_A
+R_XTAL_8M_A
 Text Label 14400 3550 2    50   ~ 0
-XTAL_8M_A
-Text Label 14400 5350 2    50   ~ 0
-XTAL_32K_A
-Text Label 14400 5450 2    50   ~ 0
-XTAL_32K_B
+R_XTAL_8M_B
 Wire Wire Line
 	13650 2750 14400 2750
 Wire Wire Line
@@ -3545,7 +3387,7 @@ F 3 "" H 13450 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2650 7850 0    50   ~ 0
-BOOT1
+L_BOOT1
 $Comp
 L power:GND #PWR0137
 U 1 1 61562F6B
@@ -3616,7 +3458,7 @@ $EndComp
 Wire Wire Line
 	2650 8350 2650 8250
 Text Label 1550 7850 0    50   ~ 0
-BOOT0
+L_BOOT0
 $Comp
 L power:GND #PWR0140
 U 1 1 61562FA5
@@ -3761,85 +3603,7 @@ Wire Wire Line
 	1900 2200 1750 2200
 Connection ~ 1750 2200
 Text Label 1750 1700 1    50   ~ 0
-XTAL_8M_A
+R_XTAL_8M_A
 Text Label 1250 1700 1    50   ~ 0
-XTAL_8M_B
-$Comp
-L Device:Crystal_GND24 Y4
-U 1 1 615EDB89
-P 2300 1700
-F 0 "Y4" V 2450 1800 50  0000 L CNN
-F 1 "XTAL_8M" V 2150 1800 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 2300 1700 50  0001 C CNN
-F 3 "~" H 2300 1700 50  0001 C CNN
-	1    2300 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C27
-U 1 1 615EDB93
-P 2550 1950
-F 0 "C27" V 2650 1800 50  0000 L CNN
-F 1 "12pF" V 2450 1700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2588 1800 50  0001 C CNN
-F 3 "~" H 2550 1950 50  0001 C CNN
-	1    2550 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C26
-U 1 1 615EDB9D
-P 2050 1950
-F 0 "C26" V 2150 1800 50  0000 L CNN
-F 1 "12pF" V 1950 1700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2088 1800 50  0001 C CNN
-F 3 "~" H 2050 1950 50  0001 C CNN
-	1    2050 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 1800 2050 1700
-Wire Wire Line
-	2050 1700 2150 1700
-Wire Wire Line
-	2550 1800 2550 1700
-Wire Wire Line
-	2550 1700 2450 1700
-$Comp
-L power:GND #PWR0144
-U 1 1 615EDBAB
-P 2300 2300
-F 0 "#PWR0144" H 2300 2050 50  0001 C CNN
-F 1 "GND" H 2305 2127 50  0000 C CNN
-F 2 "" H 2300 2300 50  0001 C CNN
-F 3 "" H 2300 2300 50  0001 C CNN
-	1    2300 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 2300 2300 2200
-Wire Wire Line
-	2300 2200 2550 2200
-Wire Wire Line
-	2550 2200 2550 2100
-Wire Wire Line
-	2300 2200 2050 2200
-Wire Wire Line
-	2050 2200 2050 2100
-Connection ~ 2300 2200
-Wire Wire Line
-	2300 1900 2300 2200
-Wire Wire Line
-	2300 1500 2300 1400
-Wire Wire Line
-	2300 1400 2700 1400
-Wire Wire Line
-	2700 1400 2700 2200
-Wire Wire Line
-	2700 2200 2550 2200
-Connection ~ 2550 2200
-Text Label 2550 1700 1    50   ~ 0
-XTAL_32K_A
-Text Label 2050 1700 1    50   ~ 0
-XTAL_32K_B
+R_XTAL_8M_B
 $EndSCHEMATC
