@@ -1,0 +1,29 @@
+name: KiCAD
+
+on:
+  push:
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
+  pull_request:
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: nerdyscout/kicad-exports@v2.3.1
+      with:
+        config: hard/kibot.yml
+        dir: dist
+        schema: 'hard/*.sch'
+        board: 'hard/*.kicad_pcb'
+        verbose: 0
+    - name: upload result
+      uses: actions/upload-artifact@v2
+      with:
+        name: pcb
+        path: dist
