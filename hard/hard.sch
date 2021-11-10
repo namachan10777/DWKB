@@ -668,17 +668,6 @@ Text Label 11300 3250 0    50   ~ 0
 TX
 Text Label 11300 3350 0    50   ~ 0
 RX
-$Comp
-L Interface_UART:THVD1451D U1
-U 1 1 618CD6E8
-P 1450 4700
-F 0 "U1" H 1700 5350 50  0000 C CNN
-F 1 "THVD1451D" H 1700 5250 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1450 4700 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/thvd1451.pdf" H 1450 4700 50  0001 C CNN
-	1    1450 4700
-	1    0    0    -1  
-$EndComp
 Text Label 1050 4900 2    50   ~ 0
 TX
 Text Label 1050 4500 2    50   ~ 0
@@ -2040,4 +2029,41 @@ Wire Wire Line
 	3100 1400 4150 1400
 Wire Wire Line
 	4900 1400 4900 1250
+$Comp
+L Interface_UART:LTC2852xMS U1
+U 1 1 618F4706
+P 1450 4700
+F 0 "U1" H 1450 5481 50  0000 C CNN
+F 1 "LTC2852xMS" H 1450 5390 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 1450 3800 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/285012fe.pdf" H 950 4800 50  0001 C CNN
+	1    1450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0137
+U 1 1 619141F8
+P 950 4700
+F 0 "#PWR0137" H 950 4550 50  0001 C CNN
+F 1 "+3V3" V 965 4828 50  0000 L CNN
+F 2 "" H 950 4700 50  0001 C CNN
+F 3 "" H 950 4700 50  0001 C CNN
+	1    950  4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	950  4700 1050 4700
+$Comp
+L power:GND #PWR0138
+U 1 1 6191E861
+P 950 4600
+F 0 "#PWR0138" H 950 4350 50  0001 C CNN
+F 1 "GND" V 955 4472 50  0000 R CNN
+F 2 "" H 950 4600 50  0001 C CNN
+F 3 "" H 950 4600 50  0001 C CNN
+	1    950  4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  4600 1050 4600
 $EndSCHEMATC
