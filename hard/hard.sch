@@ -824,92 +824,6 @@ USB Interface
 NoConn ~ 11300 4950
 NoConn ~ 11300 2450
 NoConn ~ 11300 2350
-$Comp
-L Device:Crystal_GND24 Y1
-U 1 1 61AF0A47
-P 6150 4800
-F 0 "Y1" H 6200 5050 50  0000 L CNN
-F 1 "8MHz" H 5950 5050 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 6150 4800 50  0001 C CNN
-F 3 "~" H 6150 4800 50  0001 C CNN
-	1    6150 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR019
-U 1 1 61AF24D6
-P 6150 5400
-F 0 "#PWR019" H 6150 5150 50  0001 C CNN
-F 1 "GND" H 6155 5227 50  0000 C CNN
-F 2 "" H 6150 5400 50  0001 C CNN
-F 3 "" H 6150 5400 50  0001 C CNN
-	1    6150 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 5400 6150 5300
-$Comp
-L power:GND #PWR018
-U 1 1 61AF822E
-P 6150 4500
-F 0 "#PWR018" H 6150 4250 50  0001 C CNN
-F 1 "GND" H 6155 4327 50  0000 C CNN
-F 2 "" H 6150 4500 50  0001 C CNN
-F 3 "" H 6150 4500 50  0001 C CNN
-	1    6150 4500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6150 4500 6150 4600
-$Comp
-L Device:C C6
-U 1 1 61AFE9C3
-P 5900 5050
-F 0 "C6" V 5850 4900 50  0000 L CNN
-F 1 "10pF" V 5850 5100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5938 4900 50  0001 C CNN
-F 3 "~" H 5900 5050 50  0001 C CNN
-	1    5900 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C7
-U 1 1 61AFFE91
-P 6400 5050
-F 0 "C7" V 6350 4900 50  0000 L CNN
-F 1 "10pF" V 6350 5100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6438 4900 50  0001 C CNN
-F 3 "~" H 6400 5050 50  0001 C CNN
-	1    6400 5050
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 4900 5900 4800
-Wire Wire Line
-	5900 4800 6000 4800
-Wire Wire Line
-	6400 4900 6400 4800
-Wire Wire Line
-	6400 4800 6300 4800
-Wire Wire Line
-	6150 5300 6400 5300
-Wire Wire Line
-	6400 5300 6400 5200
-Connection ~ 6150 5300
-Wire Wire Line
-	6150 5300 6150 5000
-Wire Wire Line
-	5900 5200 5900 5300
-Wire Wire Line
-	5900 5300 6150 5300
-Text Label 5900 4800 1    50   ~ 0
-XTAL_A
-Text Label 6400 4800 1    50   ~ 0
-XTAL_B
-Text Label 10000 3450 2    50   ~ 0
-XTAL_A
-Text Label 10000 3550 2    50   ~ 0
-XTAL_B
 NoConn ~ 10000 5450
 Wire Notes Line
 	750  3550 4150 3550
@@ -1043,16 +957,6 @@ Wire Wire Line
 	6250 1300 6250 1400
 Text Label 4150 2200 0    50   ~ 0
 VBUS_DETECT
-Wire Notes Line
-	5750 3550 5750 5650
-Wire Notes Line
-	5750 5650 6550 5650
-Wire Notes Line
-	6550 5650 6550 3550
-Wire Notes Line
-	6550 3550 5750 3550
-Text Notes 5750 3550 0    50   ~ 0
-Crystal
 $Comp
 L power:GND #PWR0104
 U 1 1 618A980D
@@ -2066,4 +1970,6 @@ F 3 "" H 950 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	950  4600 1050 4600
+NoConn ~ 10000 3550
+NoConn ~ 10000 3450
 $EndSCHEMATC
